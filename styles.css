@@ -1,0 +1,134 @@
+body {
+ margin: 0;
+ padding: 0;
+ background-color: #71B5D1;
+ color: rgb(240, 240, 240);
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ width: 100vw;
+ font-family: Verdana, Tahoma, sans-serif;
+}
+
+header {
+ width: 95%;
+ max-width: 788px;
+ display: flex;
+ justify-content: flex-end;
+ padding: 12px;
+ margin-top: 15px;
+}
+
+.share-button {
+ width: 40px;
+ height: 40px;
+ border-radius: 20px;
+ background-color: rgb(240, 240, 240);
+}
+.share-button svg {
+ margin-left: 12px;
+ margin-top: 10px;
+ color: rgba(0, 0, 0, 0.6);
+}
+
+.container {
+ width: 90%;
+ max-width: 680px;
+ margin: 10px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+h1 {
+ font-size: 20px;
+ margin-bottom: 30px;
+}
+
+a {
+ text-decoration: none;
+ color: rgb(0, 0, 0);
+}
+
+.tile {
+ width: 100%;
+ background-color: #EAD0D6;
+ margin: 7px;
+ border-radius: 17px;
+ display: flex;
+ justify-content: space-between;
+}
+.tile:hover {
+ transition: transform 0.2s cubic-bezier(0.30, 0.8, 0.25, 1);
+ transform: scale(1.02);
+}
+
+.tile-share-button {
+ margin: 10px;
+ width: 40px;
+ height: 40px;
+ border-radius: 20px;
+ background-color: rgb(255, 255, 255);
+}
+
+.tile-share-button svg {
+ margin-left: 12px;
+ margin-top: 10px;
+}
+
+.image-container {
+ height: 96px;
+ width: 96px;
+ border-radius: 50px;
+ overflow: hidden;
+}
+
+.image-container img {
+ height: 100px;
+ margin-left: -23px;
+}
+
+.icon {
+ margin: 8px 10px;
+ width: 35px;
+ height: 35px;
+}
+
+svg {
+ fill: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 600px) {
+ h1 {
+   font-size: 18px; /* Mengurangi ukuran font untuk judul */
+   margin-bottom: 20px; /* Mengurangi margin bawah */
+ }
+
+ .container {
+   width: 90%; /* Mengubah lebar kontainer agar lebih lebar di layar kecil */
+ }
+
+ .tile {
+   align-items: center; /* Mengatur item agar berada di tengah */
+ }
+
+ .image-container {
+   height: 80px; /* Mengurangi tinggi gambar */
+   width: 80px; /* Mengurangi lebar gambar */
+ }
+
+ .image-container img {
+   margin-left: -30px;
+ }
+ 
+ .tile-share-button {
+   width: 35px; /* Mengurangi ukuran tombol share */
+   height: 35px; /* Mengurangi ukuran tombol share */
+ }
+
+ .icon {
+   width: 25px; /* Mengurangi ukuran ikon */
+   height: 25px; /* Mengurangi ukuran ikon */
+ }
+}
